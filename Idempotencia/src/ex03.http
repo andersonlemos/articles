@@ -1,0 +1,7 @@
+curl -X POST http://localhost:3000/pagamentos \
+    -H "Content-Type: application/json" \
+    -d '{
+         "idempotency_key": "abc123",
+         "amount": 100,
+         "currency": "USD"
+        }'
